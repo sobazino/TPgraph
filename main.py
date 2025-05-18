@@ -153,7 +153,7 @@ class MNGRAPH(nn.Module):
 class DGraph(nn.Module):
     def __init__(self):
         super(DGraph, self).__init__()
-        self.L1 = MNGRAPH(6, 64)
+        self.L1 = MNGRAPH(7, 64)
         self.L2 = MNGRAPH(64, 128)
         self.L3 = MNGRAPH(128, 256)
         self.relu = nn.ReLU()
@@ -171,7 +171,7 @@ class DGraph(nn.Module):
 class PGraph(nn.Module):
     def __init__(self):
         super(PGraph, self).__init__()
-        self.L1 = MNGRAPH(6, 12)
+        self.L1 = MNGRAPH(7, 12)
         self.L2 = MNGRAPH(12, 24)
         self.L3 = MNGRAPH(24, 32)
         self.L4 = MNGRAPH(32, 64)
