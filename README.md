@@ -1,4 +1,4 @@
-# TPgraph
+# TPgraph (GConvNet)
 
 **<p align="center">Drug–target interaction prediction</p>**
 
@@ -23,3 +23,11 @@ main.py
 ```
 
 Place all PDB files (3D protein structures) in the ```DBP``` folder before running
+
+## The main core: GConvNet
+### Install with pip:
+```
+pip install GConvNet
+```
+
+GConvNet is a PyTorch module for graph convolution using triplet-based edge structures and dynamic node filtering. It enables higher-order neighborhood modeling via (3×1) convolution over node triplets, and selectively retains important nodes based on degree centrality.
